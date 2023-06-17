@@ -12,5 +12,5 @@ function sqrt_func:
         If the square of the number at index mid is greater than the given number, the function updates end to mid - 1 to narrow down the search range.
         Finally, if the while loop completes without finding the exact square root, the function returns the value of rs, which represents the closest number to the square root.
 
-
+    Big 0 of this function is O(log(n)) because the code uses a while loop to perform a binary search on the arr list to find the correct answer. The time complexity of a binary search is O(log(n)), where n is the number of elements in the arr list.
 

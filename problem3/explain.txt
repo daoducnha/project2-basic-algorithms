@@ -4,7 +4,9 @@ rearrange_digits function:
    The function starts by creating an min-heap using the heapq form this array
    Then it will pop 2 number of the heap until len of the heap > 1
    then updates num1 and num2 by multiplying each element with the appropriate power of base and adding it to the respective sum. The power of base is determined by the variable i, which starts at 0 and increments by 1 with each iteration of the loop. This ensures that each digit is placed in the correct position in the resulting numbers.
-    Once the loop completes, the function checks if there is one element remaining in the heap. If there is, it means that the length of the input list was odd, and there is one element that has not been included in either num1 or num2. In this case, the function retrieves the remaining element from the heap, multiplies it by base raised to the power of i, and adds it to num2.
+   Once the loop completes, the function checks if there is one element remaining in the heap. If there is, it means that the length of the input list was odd, and there is one element that has not been included in either num1 or num2. In this case, the function retrieves the remaining element from the heap, multiplies it by base raised to the power of i, and adds it to num2.
+   Finally, the function returns a tuple(num1, num2)
 
-    Finally, the function returns a tuple(num1, num2)
+   Big0 of this function is O(n) because it is the creation of the heap, which has a time complexity of O(n) then popping two elements from the heap: The heappop operation has a time complexity of O(log(n)),  Therefore, the overall time complexity of the function is O(n).
+
 

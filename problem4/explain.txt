@@ -7,3 +7,4 @@ The function sort_012:
         If the element is equal to 1, it appends the element to arr_1
         If the element is equal to 2, it appends the element to arr_2
     Finally, the function returns the sorted list rs = arr_0 + arr_1 + arr_2
+    because this function loop over the list to fill data in 3 sub array, Big 0 of this function is O(n)

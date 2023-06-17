@@ -7,6 +7,12 @@ def rotated_array_search(input_list, number):
     Returns:
        int: Index or -1
     """
+    if len(input_list) == 0:
+        return -1
+
+    if len(input_list) == 1:
+        return 0 if input_list[0] == number else -1
+
     start_index = 0
     end_index = len(input_list) - 1
     pivot = input_list[0]
@@ -69,3 +75,5 @@ test_function([[6, 7, 8, 9, 10, 1, 2, 3, 4], 1])
 test_function([[6, 7, 8, 1, 2, 3, 4], 8])
 test_function([[6, 7, 8, 1, 2, 3, 4], 1])
 test_function([[6, 7, 8, 1, 2, 3, 4], 10])
+test_function([[6], 6])
+test_function([[], -1])

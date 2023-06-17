@@ -1,13 +1,14 @@
 TrieNode: represents a  node of Trie
     attr: is_word, children
     function:
-        insert: Add a child node in this Trie
-        suffixes:
+        insert: Big 0 of this function is O(1) because it only checking if the character already exists as a child or not will be adding a child node
+            Add a child node in this Trie
+        suffixes: Big 0 of this function is O(n) because it recursive calls and the number of suffixes collected.
             method is a recursive function that collects the suffixes for all complete words below a given node in the Trie.
 Trie: represents a Trie data structure
     attr: root
     functions:
-        insert:
+        insert: Big 0 of this function is O(n)  because it need to loop all the trie to add new nodes for word
             method is used to add a word to the Trie. It takes a word as input and starts by initializing current_node to the root of the Trie.
-        find:
+        find: Big 0 is O(m) because it only loop that iterates over the characters in the prefix(length = m) then return the correct node
             method is used to find the Trie node that represents a given prefix. It takes a prefix as input and starts by initializing current_node to the root of the Trie

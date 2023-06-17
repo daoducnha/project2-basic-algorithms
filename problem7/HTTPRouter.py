@@ -89,8 +89,6 @@ class Router:
             if sub_path not in current_node.children_path:
                 return self.handler["not found handler"]
             current_node = current_node.children_path[sub_path]
-
-
         return current_node.handler
 
     def split_path(self, path):

@@ -1,22 +1,21 @@
 class RouteTrieNode: represents a node in the Trie
     attributes: is_handler, children_path, handler
     function:
-        insert:
+        insert:  Big 0 of this function is O(1) because it only checking if the character already exists as a child or not will be adding a child node
+            Add a child node in this Trie
 class RouteTrie: represents a Trie of route
     attribute: root
     functions:
-        insert:
+        insert: Big 0 of this function is O(n) because The code uses a for loop to iterate over each sub-path then creating a new node if the sub-path doesn't exist
             method is used to insert a path and its corresponding handler into the Trie. It starts by initializing a variable current_node to the root of the Trie.
-        find:
+        find:  Big 0 of this function is O(n) because The code uses a for loop to iterate over each sub-path then creating a new node if the sub-path doesn't exist
             method is used to find the handler associated with a given path. It starts by initializing current_sub_path to the root of the Trie
         split_path:
             parse path to array of sub paths
 class Router: maintain RouteTrie object
     attribute: route, handler
     functions:
-        add_handler:
+        add_handler: Big 0 of this function is O(n) because The code uses a for loop to iterate over each sub-path then creating a new node if the sub-path doesn't exist
             method is used to add a handler for a specific path. It starts by initializing current_node to the root of the Trie. It adds the handler to the handler dictionary.
-        lookup:
+        lookup: Big 0 of this function is O(n) where n is the number of parts in the path because it loop over the sub paths and return the last node of this rout
             method is used to find the handler associated with a given path. It splits the path into sub-paths using the split_path method.
-        split_path:
-                parse path to array of sub paths

@@ -14,3 +14,7 @@ rotated_array_search function
 
     if find number > max number or find number < min number
         return -1
+
+    Big 0 of this function is  O(log(n)) because
+        Finding the maximum number index will be take O(log(n)) it will loop in n/2 of each sub arrays to find the index of max number
+        Performing a binary search for each sub array will be take O(log(n))

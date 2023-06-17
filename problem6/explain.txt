@@ -6,3 +6,5 @@ The function get_min_max:
     Next, the function enters a for loop that iterates over each element i in the input list. Inside the loop, it compares i with the current minimum value (min) and updates min if i is smaller. Similarly, it compares i with the current maximum value (max) and updates max if i is larger.
 
     After iterating through all the elements in the input list, the function returns a tuple containing the minimum and maximum values (min, max).
+
+    Big 0 of this function is O(n) because function is the loop that iterates over the input list to determine min and max value of the list
