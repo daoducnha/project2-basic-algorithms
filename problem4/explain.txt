@@ -1,0 +1,9 @@
+The function sort_012:
+    args:  input list
+
+    The function starts by initializing three empty arrays: arr_0, arr_1, and arr_2. These arrays will be used to store the elements of the input list based on their values.
+    Then, the function iterates over each element
+        If the element is equal to 0, it appends the element to arr_0
+        If the element is equal to 1, it appends the element to arr_1
+        If the element is equal to 2, it appends the element to arr_2
+    Finally, the function returns the sorted list rs = arr_0 + arr_1 + arr_2

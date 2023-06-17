@@ -1,0 +1,16 @@
+rotated_array_search function
+    arges:
+        input_list (the rotated sorted array)
+        number (the target number we want to find in the array).
+        The function aims to find the index of the target number in the rotated array.
+
+    The function starts by initializing the start_index and end_index variables to the first and last indices of the input_list, respectively.
+    It also assigns the value of the first element in the array to the pivot variable.
+    the next while loop will be find index of them max value in the list
+    if the find number >= pivot:
+        search_func(input_list[:max_num_index + 1], number)
+    if the find number < pivot:
+        search_func(input_list[max_num_index + 1:], number)
+
+    if find number > max number or find number < min number
+        return -1

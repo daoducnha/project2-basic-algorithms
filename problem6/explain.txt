@@ -1,0 +1,8 @@
+The function get_min_max:
+    args: unsorted list integer
+
+    The function starts by initializing two variables, min and max, to the first element of the input list (ints[0]). These variables will be used to keep track of the current minimum and maximum values as the function iterates through the list.
+
+    Next, the function enters a for loop that iterates over each element i in the input list. Inside the loop, it compares i with the current minimum value (min) and updates min if i is smaller. Similarly, it compares i with the current maximum value (max) and updates max if i is larger.
+
+    After iterating through all the elements in the input list, the function returns a tuple containing the minimum and maximum values (min, max).

@@ -1,0 +1,22 @@
+class RouteTrieNode: represents a node in the Trie
+    attributes: is_handler, children_path, handler
+    function:
+        insert:
+class RouteTrie: represents a Trie of route
+    attribute: root
+    functions:
+        insert:
+            method is used to insert a path and its corresponding handler into the Trie. It starts by initializing a variable current_node to the root of the Trie.
+        find:
+            method is used to find the handler associated with a given path. It starts by initializing current_sub_path to the root of the Trie
+        split_path:
+            parse path to array of sub paths
+class Router: maintain RouteTrie object
+    attribute: route, handler
+    functions:
+        add_handler:
+            method is used to add a handler for a specific path. It starts by initializing current_node to the root of the Trie. It adds the handler to the handler dictionary.
+        lookup:
+            method is used to find the handler associated with a given path. It splits the path into sub-paths using the split_path method.
+        split_path:
+                parse path to array of sub paths
